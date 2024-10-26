@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>PRORIPEST | Modelo</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/img/PRORIPEST-logo.svg" alt="">
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Modelo</a></li>
+                <li><a href="./pronostico.html">Pronóstico</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="modelo">
+        <h1>Modelo</h1>
+        </section>
+        <article>
+            <h3>PRORIPEST</h3>
+                <p>En PRORIPEST se identifican cuatro ejes de simulación referidos al uso de fitosanitarios que son 1) Peligro ecotoxicológico, 2) Presencia en el ambiente, 3) Exposición y 4) Riesgo ambiental. Los valores de todas las medidas se expresan en una escala que va de 0 (mínimo valor) a 1 (máximo valor). 
+                Peligro ecotoxicológico [0-1] = Toxicidad intrínseca de los fitosanitarios.
+                Presencia en el ambiente [0-1] = Destino de un fitosanitario en las fases ambientales (suelo, aires, agua superficial y subterránea). 
+                Exposición [0-1] = Probabilidad de ingesta de un fitosanitario en base a su presencia en el ambiente y del organismo evaluado. 
+                Riesgo ambiental [0-1] = Riesgo ambiental derivado del Peligro ecotoxicológico y la Exposición.
+                </p>
+            <h3>Peligro ecotoxicológico</h3>
+                <p>El peligro ecotoxicológico es una propiedad definida por la dosis aplicada y la dosis letal 50 (DL50) de cada fitosanitario. Puede calcularse para cada fitosanitario aplicado o para la totalidad de los fitosanitarios aplicados en un lote. PRORIPEST calcula el peligro ecotoxicológico de los fitosanitarios considerando el efecto combinado sobre insectos, mamíferos y peces a través de un valor de peligro global: Peligro ecotoxicológico (P).
+                </p>
+                <p>PRORIPEST también calcula los peligros ecotoxicológicos individuales sobre insectos, mamíferos y peces a través de tres indicadores de peligros parciales: 
+                <br>Peligro para insectos (Pi)
+                <br>Peligro para mamíferos (Pm)
+                <br>Peligro para peces (Pf)
+                </p>
+            <div class="recuadro">
+                <p>Todos los valores de Peligro no varían en la ventana del pronóstico porque sólo dependen del fitosanitario y su dosis.</p>
+            </div>
+            <h3>Presencia en el ambiente</h3>
+                <p>La presencia en el ambiente es una variable definida por cada fitosanitario y la condición en que es utilizado (manejo, sitio y clima). Se calcula para cada fitosanitario aplicado. PRORIPEST pronostica la presencia de cada fitosanitario en cuatro fases ambientales: 1) agua superficial, 2) agua subterránea, 3) aire y 4) suelo, a través de cuatro indicadores:
+                <br>Presencia en el suelo
+                <br>Presencia en el aire
+                <br>Presencia en el agua subterránea
+                <br>Presencia en el agua superficial
+                </p>
+                <p>Todos los valores de Presencia son pronósticos a tres días y dependen del clima, del sitio, del manejo y del fitosanitario.</p>
+            </div>
+            <h3>Exposición</h3>
+                <p>La exposición es una variable definida por la presencia en el ambiente y la probabilidad de ingesta por cada organismo evaluado. Se calcula para cada fitosanitario. 
+                <br>PRORIPEST calcula la exposición combinando la Presencia en el ambiente de los fitosanitarios y 2) la vía de ingestión de fitosanitarios de cada organismo evaluado (insectos, mamíferos y peces). </p>
+                <p>Los valores de exposición no se reportan como un indicador de PRORIPEST.</p>
+            <h3>Riesgo ambiental</h3>
+                <p>El riesgo ambiental es una variable definida por la combinación del Peligro ecotoxicológico (propiedad intrínseca de los fitosanitarios) y de la Exposición (variable asociada a los fitosanitarios, su condición de uso y el organismo evaluado). Puede calcularse para cada fitosanitario o para la totalidad de los fitosanitarios aplicados en un lote. PRORIPEST pronostica el riesgo ambiental de los fitosanitarios considerando el efecto combinado sobre insectos, mamíferos y peces, a través de un valor de riesgo global: Riesgo ambiental. 
+                    <br>PRORIPEST también pronostica los riesgos individuales sobre insectos, mamíferos y peces, a través de tres indicadores de riesgo parciales: 
+                    <br>Riesgo  para insectos (Ri)
+                    <br>Riesgo  para mamíferos (Rm)
+                    <br>Riesgo  para peces (Rf)
+                </p>
+            <div class="recuadro">
+                <p>Todos los valores de Riesgo son pronósticos a tres días y dependen del clima, del sitio, del manejo y del fitosanitario y su dosis.</p>
+            </div>
+            </article>
+            </main>
+    <footer>
+        <div class="logos">
+        <img src="../assets/img/fauba.png" alt=""> 
+        <img src="../assets/img/ifeva2.png" alt=""> 
+        <img src="../assets/img/uba2.png" alt=""> 
+        <img src="../assets/img/conicet2.png" alt="">
+        <img src="../assets/img/surcos-lg-100x80.png" alt="">
+        <img src="../assets/img/smn_horizontal_arg-352x160.png" alt="">
+        </div>
+        <p>© FAUBA | Cátedra de Cerealicultura | Contacto: Diego O. Ferraro ferraro@agro.uba.ar</p>
+    </footer>
+</body>
+</html>

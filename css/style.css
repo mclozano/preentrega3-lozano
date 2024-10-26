@@ -1,0 +1,676 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-family: "Figtree", sans-serif;
+  line-height: 1.35;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
+  color: #086fa6;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.7rem;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.7rem;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.logo img {
+  width: 180px;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  padding-right: 25px;
+  font-family: "Figtree", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  list-style: none;
+  text-decoration: none;
+  color: #086fa6;
+}
+
+.navbar li :hover {
+  text-decoration: none;
+  color: #44a4d7;
+}
+
+.encabezado {
+  width: 100%;
+  height: 250px;
+  background-image: url("../assets/img/agricultura.jpg");
+  background-size: cover;
+}
+
+.encabezado h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+}
+
+.encabezado p {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+.pronostico-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pronostico-home article {
+  width: 50%;
+  padding: 0 30 0 30;
+}
+
+.imagen-home img {
+  max-width: 500px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #086fa6;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.servicios {
+  background-color: #e6f1f6;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px;
+}
+
+.servicios article {
+  padding: 20px;
+}
+
+footer {
+  background-color: #f6f6f6;
+}
+
+footer img {
+  height: 80px;
+  margin: 20px;
+}
+
+footer p {
+  text-align: center;
+  padding: 10 0 30 0;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modelo {
+  width: 100%;
+  height: 150px;
+  background-image: url("../assets/img/encabezado-modelo.jpg");
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.modelo h1 {
+  font-family: "Figtree", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+}
+
+.nosotros-top {
+  width: 100%;
+  height: 150px;
+  background-image: url("../assets/img/nosotros.jpg");
+  background-size: cover;
+}
+
+.nosotros-top h1 {
+  font-family: "Figtree", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+}
+
+.nosotros {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  width: 85%;
+}
+
+.nos-foto {
+  padding: 20px;
+}
+
+.nos-info {
+  padding: 2em;
+}
+
+.cargo {
+  font-size: 1.2em;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+.contenedor-nos {
+  background-color: #f2f2f2;
+  margin-bottom: 1.2em;
+}
+
+.contacto {
+  width: 100%;
+  height: 150px;
+  background-image: url("../assets/img/encabezado-01.jpg");
+  background-size: cover;
+}
+
+.contacto h1 {
+  font-family: "Figtree", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+}
+
+.alto-minimo {
+  min-height: 300px;
+}
+
+.contacto-info {
+  padding: 50px;
+}
+
+.pronostico1 {
+  width: 90%;
+  min-width: 90px;
+  max-width: 1000px;
+  height: auto;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 60% repeat(4, 1fr);
+  place-items: left;
+  font-size: 15px;
+  color: white;
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
+  line-height: 1, 8rem;
+  border: solid 1px white;
+}
+
+.pronostico1 p {
+  /*background-color: white;*/
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px;
+  /*background-color: #14a12e;*/
+  border: solid 1px white;
+}
+
+.pronostico1 h4 {
+  /*background-color: white;*/
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 10px;
+  color: black;
+  font-weight: 400;
+  border: solid 1px white;
+  background-color: #f6f6f6;
+}
+
+.encabezado1 {
+  width: 90%;
+  min-width: 90px;
+  max-width: 1000px;
+  height: auto;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 60% repeat(4, 1fr);
+  place-items: left;
+}
+
+.encabezado1 h4 {
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+  background-color: #086fa6;
+  border: solid 1px white;
+  padding: 10px;
+}
+
+.encabezado1 p {
+  line-height: 1, 8rem;
+  color: white;
+  text-align: left;
+  background-color: #086fa6;
+  border: solid 1px white;
+  padding: 10px;
+}
+
+.resultado1 {
+  display: grid;
+  grid-template-columns: 60% repeat(4, 1fr);
+  place-items: left;
+}
+
+.resultado1 p, h4 {
+  color: white;
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
+  line-height: 1, 8rem;
+  font-size: 14px;
+  text-align: center;
+  border: solid 1px white;
+}
+
+.risk0 {
+  background-color: #14a12e;
+}
+
+.risk01 {
+  background-color: #54ab26;
+}
+
+.risk02 p {
+  background-color: #82b81f;
+}
+
+.risk03 {
+  background-color: #c2d11a;
+}
+
+.risk04 {
+  background-color: #fccc0d;
+}
+
+.risk05 {
+  background-color: #f59e17;
+}
+
+.risk06 {
+  background-color: #ed7326;
+}
+
+.risk07 {
+  background-color: #e8592e;
+}
+
+.risk08 {
+  background-color: #cc2e1c;
+}
+
+.risk09 {
+  background-color: #9e1d1b;
+}
+
+.risk1 {
+  background-color: #781417;
+}
+
+.info {
+  padding: 10 0 20 0;
+}
+
+.intro {
+  width: 90%;
+  max-width: 1000px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro img {
+  padding: 20 0 10 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.consulta {
+  display: block;
+  text-align: center;
+}
+
+.consulta [type=button] {
+  background-color: #086fa6;
+}
+
+.consulta input {
+  min-width: 250px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: inherit;
+  color: #ffffff;
+  margin: 1rem;
+  padding: 12px;
+  text-transform: uppercase;
+  border-radius: 1rem;
+}
+
+.consulta input:hover {
+  background-color: #00597e;
+}
+
+.consulta input:a {
+  background-color: #00597e;
+}
+
+.paso1 {
+  /*max-width: 300px;*/
+  display: flex;
+  max-width: fit-content;
+  padding-left: 10px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  padding-bottom: 3px;
+  padding-top: 5px;
+  font-family: "Figtree", sans-serif;
+}
+
+.paso1 select {
+  min-width: 200px;
+  max-width: 350px;
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+  border: solid 1px lightgrey;
+  font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+}
+
+select {
+  min-width: 200px;
+  max-width: 350px;
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+  border: solid 1px lightgrey;
+  font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.paso2 {
+  min-width: 200px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  max-width: fit-content;
+  padding-left: 10px;
+}
+
+input {
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+  border: solid 1px lightgrey;
+  font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+}
+
+/*banner MODAGRI*/
+.hero_header {
+  font-family: "Nunito", sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  /*letter-spacing: 4px;*/
+}
+
+.hero {
+  background-image: url("../assets/img/background-modagri.jpg");
+  background-color: #B3B3B3;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.light {
+  font-weight: bold;
+  color: #717070;
+}
+
+.tagline {
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 4px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.button {
+  font-family: "Nunito", sans-serif;
+  width: 200px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  transition: all 0.3s linear;
+  background-color: #023b3a;
+}
+
+.button:hover {
+  background-color: #FEFEFE;
+  color: #0b5a58;
+  cursor: pointer;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button a:hover {
+  color: #0b5a58;
+}
+
+/*RESPONSIVE*/
+/* Mobile */
+@media (max-width: 320px) {
+  .pronostico-home {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pronostico-home article {
+    width: 90%;
+    padding: 0px;
+  }
+  .servicios {
+    display: grid;
+    padding: 20px;
+  }
+  .imagen-home img {
+    max-width: 100%;
+  }
+  .encabezado p {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nosotros {
+    grid-template-columns: 100%;
+  }
+  .nos-foto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nos-foto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nos-info h2, p {
+    text-align: center;
+  }
+  .logos {
+    display: grid;
+  }
+}
+/* Tablets */
+@media (min-width: 321px) and (max-width: 767px) {
+  .pronostico-home {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .pronostico-home article {
+    width: 90%;
+    padding: 0px;
+  }
+  .servicios {
+    display: grid;
+    padding: 20px;
+  }
+  .imagen-home img {
+    max-width: 100%;
+  }
+  .encabezado p {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .nos-foto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nos-info h2, p {
+    text-align: center;
+  }
+  .logos {
+    display: grid;
+  }
+}
+/* Desktop */
+@media (min-width: 768px) and (max-width: 1096px) {
+  .pronostico-home {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .pronostico-home article {
+    width: 90%;
+  }
+  .imagen-home img {
+    max-width: 100%;
+  }
+  .encabezado p {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .nos-foto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nos-info h2 {
+    text-align: center;
+  }
+  .logos {
+    display: inline;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
