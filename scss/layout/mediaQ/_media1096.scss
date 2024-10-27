@@ -1,0 +1,32 @@
+/* Desktop */
+@media (min-width: 768px) and (max-width: 1096px) {
+	.pronostico-home {
+    display: grid;
+	grid-template-columns: 100%;
+}
+	.pronostico-home article {
+    width: 90%;
+}
+.imagen-home img{
+    max-width: 100%;
+}
+	.encabezado p {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nosotros {
+	display: grid;
+    grid-template-columns: 100%;
+	}
+.nos-foto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.nos-info h2{
+	text-align: center;	
+	}
+.logos{
+    display: inline;
+}	
+}

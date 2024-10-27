@@ -1,0 +1,27 @@
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    padding-right: 25px;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.navbar li {
+list-style: none;
+}
+    .navbar li a{
+            list-style: none;
+            text-decoration: none;
+            color: $color-principal;
+            }
+
+    .navbar li :hover {
+                text-decoration: none;
+                color: $color-link;
+            }
+
+            .logo img {
+                width: 180px;
+            }

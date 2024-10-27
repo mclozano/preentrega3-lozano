@@ -1,0 +1,37 @@
+/* Tablets */
+@media (min-width: 321px)and (max-width: 767px) {
+	.pronostico-home {
+    display: grid;
+	grid-template-columns: 100%;
+}
+	.pronostico-home article {
+    width: 90%;
+	padding: 0px;
+}
+	.servicios {
+    display: grid;
+    padding: 20px;
+}
+.imagen-home img{
+    max-width: 100%;
+}
+	.encabezado p {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nosotros {
+	display: grid;
+    grid-template-columns: 100%;
+	}
+.nos-foto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.nos-info h2, p{
+	text-align: center;	
+	}
+.logos{
+    display: grid;
+}	
+}

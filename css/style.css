@@ -15,19 +15,13 @@ body {
 p {
   font-family: "Figtree", sans-serif;
   line-height: 1.35;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Figtree", sans-serif;
   font-weight: 700;
   color: #086fa6;
-}
-
-header {
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 main {
@@ -43,14 +37,196 @@ main {
   margin-bottom: 0.7rem;
 }
 
+header {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.encabezado {
+  width: 100%;
+  height: 250px;
+  background-image: url("../assets/img/agricultura.jpg");
+  background-size: cover;
+}
+
+.encabezado h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+}
+
+.encabezado p {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+.modelo, .pronostico, .nosotros-top {
+  width: 100%;
+  height: 200px;
+  background-image: url("../assets/img/encabezado-modelo.jpg");
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.modelo h1, .pronostico h1, .nosotros-top h1 {
+  font-family: "Figtree", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+}
+
+.nosotros-top {
+  background-image: url("../assets/img/nosotros.jpg");
+}
+
+.pronostico {
+  background-image: url("../assets/img/encabezado-pronostico.jpg");
+}
+
 footer {
   margin-top: 50px;
 }
 
-.logo img {
-  width: 180px;
+footer {
+  background-color: #f6f6f6;
 }
 
+footer img {
+  height: 80px;
+  margin: 20px;
+}
+
+footer p {
+  text-align: center;
+  padding: 10 0 30 0;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Desktop */
+@media (min-width: 768px) and (max-width: 1096px) {
+  .pronostico-home {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .pronostico-home article {
+    width: 90%;
+  }
+  .imagen-home img {
+    max-width: 100%;
+  }
+  .encabezado p {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .nos-foto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nos-info h2 {
+    text-align: center;
+  }
+  .logos {
+    display: inline;
+  }
+}
+/* Tablets */
+@media (min-width: 321px) and (max-width: 767px) {
+  .pronostico-home {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .pronostico-home article {
+    width: 90%;
+    padding: 0px;
+  }
+  .servicios {
+    display: grid;
+    padding: 20px;
+  }
+  .imagen-home img {
+    max-width: 100%;
+  }
+  .encabezado p {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .nos-foto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nos-info h2, p {
+    text-align: center;
+  }
+  .logos {
+    display: grid;
+  }
+}
+@media (max-width: 320px) {
+  .pronostico-home {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pronostico-home article {
+    width: 90%;
+    padding: 0px;
+  }
+  .servicios {
+    display: grid;
+    padding: 20px;
+  }
+  .imagen-home img {
+    max-width: 100%;
+  }
+  .encabezado p {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nosotros {
+    grid-template-columns: 100%;
+  }
+  .nos-foto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nos-foto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nos-info h2, p {
+    text-align: center;
+  }
+  .logos {
+    display: grid;
+  }
+}
 .navbar {
   display: flex;
   list-style: none;
@@ -77,26 +253,8 @@ footer {
   color: #44a4d7;
 }
 
-.encabezado {
-  width: 100%;
-  height: 250px;
-  background-image: url("../assets/img/agricultura.jpg");
-  background-size: cover;
-}
-
-.encabezado h1 {
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 40px;
-  color: white;
-}
-
-.encabezado p {
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-  color: white;
+.logo img {
+  width: 180px;
 }
 
 .pronostico-home {
@@ -139,60 +297,6 @@ h3 {
 
 .servicios article {
   padding: 20px;
-}
-
-footer {
-  background-color: #f6f6f6;
-}
-
-footer img {
-  height: 80px;
-  margin: 20px;
-}
-
-footer p {
-  text-align: center;
-  padding: 10 0 30 0;
-}
-
-.logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 20px;
-}
-
-.modelo {
-  width: 100%;
-  height: 150px;
-  background-image: url("../assets/img/encabezado-modelo.jpg");
-  background-size: cover;
-  margin-bottom: 30px;
-}
-
-.modelo h1 {
-  font-family: "Figtree", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 40px;
-  color: white;
-}
-
-.nosotros-top {
-  width: 100%;
-  height: 150px;
-  background-image: url("../assets/img/nosotros.jpg");
-  background-size: cover;
-}
-
-.nosotros-top h1 {
-  font-family: "Figtree", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 40px;
-  color: white;
 }
 
 .nosotros {
@@ -266,17 +370,14 @@ footer p {
 }
 
 .pronostico1 p {
-  /*background-color: white;*/
   width: 100%;
   height: 100%;
   text-align: center;
   padding: 10px;
-  /*background-color: #14a12e;*/
   border: solid 1px white;
 }
 
 .pronostico1 h4 {
-  /*background-color: white;*/
   width: 100%;
   height: 100%;
   text-align: left;
@@ -426,7 +527,6 @@ footer p {
 }
 
 .paso1 {
-  /*max-width: 300px;*/
   display: flex;
   max-width: fit-content;
   padding-left: 10px;
@@ -488,16 +588,45 @@ input {
   padding: 10px;
 }
 
-/*banner MODAGRI*/
-.hero_header {
+.modagri {
   font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1000px;
+  background-color: #FFFFFF;
+}
+
+.logo-top {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-top img {
+  width: 250px;
+  padding: 10px;
+}
+
+.hero_header {
   color: #FFFFFF;
   text-align: center;
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
-  /*letter-spacing: 4px;*/
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
 }
 
 .hero {
@@ -519,6 +648,123 @@ input {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.que-es h2 {
+  color: #0b5a58;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.que-es p {
+  font-size: 18px;
+}
+
+.que-es {
+  max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text_column {
+  max-width: 800px;
+  text-align: justify;
+  font-weight: 400;
+  line-height: 25px;
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #666666;
+}
+
+.about {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 35px;
+  /*display: inline-block;*/
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #FFFFFF;
+  margin-top: 0px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stats {
+  color: #0b5a58;
+  margin-bottom: 5px;
+}
+
+.gallery {
+  clear: both;
+  display: inline-block;
+  width: 100%;
+  background-color: #FFFFFF;
+  /* [disabled]min-width: 400px;
+  */
+  padding-bottom: 35px;
+  padding-top: 0px;
+  margin-top: -5px;
+  margin-bottom: 0px;
+}
+
+.thumbnail {
+  /*width: 25%;*/
+  width: auto;
+  text-align: center;
+  float: left;
+  margin-top: 35px;
+}
+
+.gallery .thumbnail h4 {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  color: #52BAD5;
+}
+
+.gallery .thumbnail p {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  color: #A3A3A3;
+}
+
+.banner {
+  background-color: #2D9AB7;
+  background-image: url("../assets/img/riesgo-ambiental-home.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.parallax {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 900;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 36px;
+  padding-top: 110px;
+  margin-top: 0px;
+}
+
+.parallax_description {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
 }
 
 .button {
@@ -559,118 +805,54 @@ input {
   color: #0b5a58;
 }
 
-/*RESPONSIVE*/
-/* Mobile */
-@media (max-width: 320px) {
-  .pronostico-home {
-    display: grid;
-    grid-template-columns: 100%;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .pronostico-home article {
-    width: 90%;
-    padding: 0px;
-  }
-  .servicios {
-    display: grid;
-    padding: 20px;
-  }
-  .imagen-home img {
-    max-width: 100%;
-  }
-  .encabezado p {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nosotros {
-    grid-template-columns: 100%;
-  }
-  .nos-foto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nos-foto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nos-info h2, p {
-    text-align: center;
-  }
-  .logos {
-    display: grid;
-  }
+.button-banner {
+  font-family: "Nunito", sans-serif;
+  width: 200px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  transition: all 0.3s linear;
+  background-color: #023b3a;
 }
-/* Tablets */
-@media (min-width: 321px) and (max-width: 767px) {
-  .pronostico-home {
-    display: grid;
-    grid-template-columns: 100%;
-  }
-  .pronostico-home article {
-    width: 90%;
-    padding: 0px;
-  }
-  .servicios {
-    display: grid;
-    padding: 20px;
-  }
-  .imagen-home img {
-    max-width: 100%;
-  }
-  .encabezado p {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nosotros {
-    display: grid;
-    grid-template-columns: 100%;
-  }
-  .nos-foto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nos-info h2, p {
-    text-align: center;
-  }
-  .logos {
-    display: grid;
-  }
+
+.button-banner:hover {
+  background-color: #FEFEFE;
+  color: #0b5a58;
+  cursor: pointer;
 }
-/* Desktop */
-@media (min-width: 768px) and (max-width: 1096px) {
-  .pronostico-home {
-    display: grid;
-    grid-template-columns: 100%;
-  }
-  .pronostico-home article {
-    width: 90%;
-  }
-  .imagen-home img {
-    max-width: 100%;
-  }
-  .encabezado p {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nosotros {
-    display: grid;
-    grid-template-columns: 100%;
-  }
-  .nos-foto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nos-info h2 {
-    text-align: center;
-  }
-  .logos {
-    display: inline;
-  }
+
+.button-banner a {
+  text-decoration: none;
+  color: white;
+}
+
+.button-banner a:hover {
+  color: #0b5a58;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #0b5a58;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  border-top-width: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

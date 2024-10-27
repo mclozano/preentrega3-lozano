@@ -1,0 +1,23 @@
+.modelo {
+    width: 100%;
+    height: 200px;
+    background-image: url("../assets/img/encabezado-modelo.jpg");
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.modelo h1{
+    font-family: 'Figtree', sans-serif;
+    font-size: map-get($fuentes, lg);
+    font-weight: 700;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+}
+.nosotros-top {
+    @extend .modelo;
+    background-image: url("../assets/img/nosotros.jpg");
+}
+.pronostico {
+    @extend .modelo;
+    background-image: url("../assets/img/encabezado-pronostico.jpg");
+}

@@ -1,0 +1,26 @@
+body{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.35;
+    font-size: map-get($fuentes, sm);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+    color: #086fa6;
+}
+main{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.7rem;
+}
+.contenedor{
+	max-width: 1000px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.7rem;
+}
