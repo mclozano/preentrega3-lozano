@@ -1,0 +1,235 @@
+
+.modagri {
+	font-family: 'Nunito', sans-serif;
+	background-color: #ffffff;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-style: normal;
+	font-weight: 400;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1000px;
+	background-color: #FFFFFF;
+}
+.logo-top{
+	display: flex;
+	justify-content: center;
+}
+.logo-top img{
+	width: 250px;
+	padding: 10px;
+}
+.hero_header {
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 30px;
+	font-weight: 800;
+}
+.hero {
+	background-image: url("../assets/img/background-modagri.jpg");
+	background-color: #B3B3B3;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+.light {
+	font-weight: bold;
+	color: #717070;
+}
+.tagline {
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 4px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.que-es h2 {
+	color: #0b5a58;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 800;
+	text-align: center;
+	padding-top: 20px;
+}
+.que-es p{
+	font-size: 18px;
+}
+.que-es {
+	max-width: 800px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.text_column {
+	max-width: 800px;
+	text-align: justify;
+	font-weight: 400;
+	line-height: 25px;
+	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: #666666;
+}
+.about {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 35px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: #FFFFFF;
+	margin-top: 0px;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.stats {
+	color: #0b5a58;
+	margin-bottom: 5px;
+}
+.gallery {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+	background-color: #FFFFFF;
+	padding-bottom: 35px;
+	padding-top: 0px;
+	margin-top: -5px;
+	margin-bottom: 0px;
+}
+.thumbnail {
+	width: auto;
+	text-align: center;
+	float: left;
+	margin-top: 35px;
+}
+.gallery .thumbnail h4 {
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	color: #52BAD5;
+}
+.gallery .thumbnail p {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	color: #A3A3A3;
+}
+.banner {
+	background-color: #2D9AB7;
+	background-image: url("../assets/img/riesgo-ambiental-home.jpg");
+	height: 400px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.parallax {
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: 900;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 36px;
+	padding-top: 110px;
+	margin-top: 0px;
+}
+.parallax_description {
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 30px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.button {
+    font-family: 'Nunito', sans-serif;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+	background-color: #023b3a;
+}
+.button:hover {
+	background-color: #FEFEFE;
+	color: #0b5a58;
+	cursor: pointer;
+}
+.button a {
+	text-decoration: none;
+	color: white;
+}
+.button a:hover {
+	color: #0b5a58;
+}
+.button-banner{
+	font-family: 'Nunito', sans-serif;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+	background-color: #023b3a;
+}
+.button-banner:hover {
+	background-color: #FEFEFE;
+	color: #0b5a58;
+	cursor: pointer;
+}
+.button-banner a {
+	text-decoration: none;
+	color: white;
+}
+.button-banner a:hover {
+	color: #0b5a58;
+}
+.copyright {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #0b5a58;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+}
