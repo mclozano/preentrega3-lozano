@@ -1,14 +1,26 @@
 @media (max-width: 320px) {
-	.pronostico-home {
-    display: grid;
-	grid-template-columns: 100%;
-    padding: 20px;
+.contenedor{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.header-top {
+	min-height: 250px;
+}
+.pronostico {
+    margin-bottom: 10px;
+}
+.pronostico-home {
+    // display: grid;
+	// grid-template-columns: 100%;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 .pronostico-home article {
-    width: 90%;
-	padding: 0px;
+    width: 100%;
+	padding: 10px;
 }
 .servicios {
     display: grid;
@@ -33,10 +45,53 @@
     margin-left: auto;
     margin-right: auto;
 }
-.nos-info h2, p{
-	text-align: center;	
+.nos-info h2, h3, p{
+	padding-left: 20px;
+    padding-right: 20px;	
 	}
 .logos{
     display: grid;
-}	
+}
+.logo-center img {
+    width: 250px;
+}
+.logo-center {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-in {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+.header-in h1 {
+    font-size: 1.2rem;
+}
+.modelo {
+    width: 100%;
+    height: 150px;
+}
+.about {
+	grid-template-columns: 100%;
+}
+.paso1 {
+	display: grid;
+}
+.paso2 {
+    display: grid;
+    grid-template-columns: max-content;
+}
+.info img {
+    max-width: 310px;
+}
+.prp-form label {
+    min-width: 200px;
+    text-align: left;
+}
+.prp-form input, textarea {
+    font: .85em sans-serif;
+    width: 250px;
+}
 }

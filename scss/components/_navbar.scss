@@ -1,27 +1,75 @@
-.navbar{
-    display: flex;
-    list-style: none;
-    gap: 25px;
-    padding-right: 25px;
-    font-family: 'Figtree', sans-serif;
-    font-weight: 600;
-    font-size: 1.2em;
+:root {
+    --color_menu: #086fa6;
+    --altura_header: 70px;
+    --padding_left_right: 1.25rem;
+    --ancho_maximo: 1400px;
+}
+.gris{
+    background-color: gainsboro;
+}
+a{
     text-decoration: none;
 }
-.navbar li {
-list-style: none;
+ol,ul{
+    list-style: none;
 }
-    .navbar li a{
-            list-style: none;
-            text-decoration: none;
-            color: $color-principal;
-            }
-
-    .navbar li :hover {
-                text-decoration: none;
-                color: $color-link;
-            }
-
-            .logo img {
-                width: 180px;
-            }
+.header-nav {
+    height: var(--altura_header);
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1400px;
+}
+.nav-bar {
+	font-family: 'Figtree', sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 var(--padding_left_right);
+}
+.menu_hamburguesa{
+    display: none;
+}
+.menu_hamburguesa:checked + .ul_links {
+    height: calc(100vh - var(--altura_header));
+    background-color: white;
+}
+.logo {
+    color: var(--color_menu);
+}
+.logo img {
+    width: 150px;
+}
+.label_hamburguesa {
+    background-color: white;
+}
+.list_icon {
+    color: var(--color_menu);
+    cursor: pointer;
+}
+.ul_links {
+    width: 100%;
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: .5rem;
+    transition: all .3s;
+    z-index: 999;
+}
+.li_links {
+    font-weight: 600;
+}
+.link {
+    font-size: 1.5rem;
+    color: var(--color_menu);
+    font-weight: 700;
+    text-transform: uppercase;
+}

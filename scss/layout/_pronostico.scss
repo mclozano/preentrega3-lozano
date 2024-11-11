@@ -1,0 +1,286 @@
+.pronostico-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pronostico-home article {
+    width: 50%;
+    padding: 20px;
+}
+.imagen-home img{
+    max-width: 500px;
+    border-radius: 20px;
+}
+h3{
+    font-size: map-get($fuentes, md);
+    font-weight: 700;
+    color: $color-principal;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.servicios{
+    background-color: #e6f1f6;
+}
+.servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+}
+.servicios article {
+    padding: 20px;
+}
+.nosotros {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    max-width: 1200px;
+}
+.nos-foto{
+    padding: 20px;
+}
+.nos-foto img{
+    border-radius: 50%;
+}
+.nos-info{
+    padding: 2em;
+}
+.cargo {
+    font-size: 1.2em;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+.contenedor-nos {
+    background-color: #f2f2f2;
+    margin-bottom: 1.2em;
+}
+.contacto h1{
+    font-family: 'Figtree', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+}
+.alto-minimo{
+    min-height: 300px;
+}
+.pronostico1{
+	width: 90%;
+	min-width: 90px;
+	max-width: 1000px;
+	height: auto;
+	margin: 0px auto;
+	display: grid;
+	grid-template-columns: 60% repeat(4, 1fr);
+	place-items: left;
+	font-size: .9375rem;
+	color: white;
+	font-family: 'Figtree', sans-serif;
+	font-weight: 700;
+	line-height: 1,8rem;
+	border: solid 1px white;
+}
+.pronostico1 p {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 10px;
+    border: solid 1px white;
+}
+.pronostico1 h4{
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	padding: 10px;
+    color: black;
+    font-weight: 400;
+    border: solid 1px white;
+    background-color: #f6f6f6;
+}
+.encabezado1{
+    width: 90%;
+	min-width: 90px;
+	max-width: 1000px;
+	height: auto;
+	margin: 0px auto;
+    display: grid;
+	grid-template-columns: 60% repeat(4, 1fr);
+	place-items: left;
+}
+.encabezado1 h4{
+        font-family: 'Figtree', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        color: white;
+        text-align: left;
+        background-color: $color-principal;
+        border: solid 1px white;
+        padding: 10px;
+    }
+    .encabezado1 p{
+        line-height: 1,8rem;
+        color: white;
+        text-align: left;
+        background-color: $color-principal;
+        border: solid 1px white;
+        padding: 10px;
+    }
+
+.resultado1{
+    display: grid;
+	grid-template-columns: 60% repeat(4, 1fr);
+	place-items: left;
+    
+}
+.resultado1 p, h4{
+    color: white;
+	font-family: 'Figtree', sans-serif;
+	font-weight: 700;
+	line-height: 1,8rem;
+    font-size: .875rem;
+    text-align: center;
+    border: solid 1px white;
+}
+.risk {
+    min-width: 65px;
+}
+.risk0 {
+    background-color: #14a12e;
+}
+.risk01 {
+    background-color: #54ab26;
+}
+.risk02 p {
+    background-color: #82b81f;
+}
+.risk03 {
+    background-color: #c2d11a;
+}
+.risk04 {
+    background-color: #fccc0d;
+}
+.risk05 {
+    background-color: #f59e17;
+}
+.risk06 {
+    background-color: #ed7326;
+}
+.risk07 {
+    background-color: #e8592e;
+}
+.risk08 {
+    background-color: #cc2e1c;
+}
+.risk09 {
+    background-color: #9e1d1b;
+}
+.risk1 {
+    background-color: #781417;
+}
+.info {
+	padding: 10px 0px 20px 0px;
+}
+.intro {
+    width: 90%;
+    max-width: 1000px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.intro img {
+    padding: 20 0 10 0;
+    display: flex;
+    flex-direction: column;
+}
+.consulta {
+    display: block;
+    text-align: center;
+}
+.consulta [type=button] {
+    background-color: $color-principal;
+}
+.consulta input {
+    min-width: 200px;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: inherit;
+    color: #ffffff;
+    margin: 1rem;
+    padding: 12px;
+    text-transform: uppercase;
+    border-radius: 1.25rem;
+}
+.consulta input:hover {
+    background-color: #00597e;
+}
+.consulta input:a {
+    background-color: #00597e;
+}
+.btn [type=button] {
+    background-color: $color-button;
+}
+
+.paso1 {
+	display: flex;
+    max-width: fit-content;
+    padding-left: 10px;
+}
+label {
+    display: block;
+    font-size: .8125rem;
+    font-weight: 600;
+    padding-bottom: 3px;
+    padding-top: 5px;
+	font-family: 'Figtree', sans-serif;
+}
+.paso1 select {
+    min-width: 200px;
+    max-width: 350px;
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+    margin-right: 1rem;
+    border-radius: 0.25rem;
+    border: solid 1px lightgrey;
+    font-family: 'Figtree', sans-serif;
+    font-size: .875rem;
+    padding: 10px;
+}
+select {
+    min-width: 200px;
+    max-width: 350px;
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+    margin-right: 1rem;
+    border-radius: 0.25rem;
+    border: solid 1px lightgrey;
+    font-family: 'Figtree', sans-serif;
+    font-size: .875rem;
+    padding: 10px;
+}
+.paso2 {
+    min-width: 200px;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+    max-width: fit-content;
+    padding-left: 10px;
+}
+input {
+    margin-right: 1rem;
+    border-radius: 0.25rem;
+    border: solid 1px lightgrey;
+    font-family: 'Figtree', sans-serif;
+    font-size: .875rem;
+    padding: 10px;
+}

@@ -3,22 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="FAUBA Agricultura, Pronóstico de Riesgo Ambiental, Peligro Ecotoxicológico de las Aplicaciones, Evaluación de Riesgo Ambiental">
     <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <title>PRORIPEST | Modelo</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="../index.html"><img src="../assets/img/PRORIPEST-logo.svg" alt="PRORIPEST"></a>
-        </div>
-        <nav>
-            <ul class="navbar">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Modelo</a></li>
-                <li><a href="./pronostico.html">Pronóstico</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+    <header class="header-nav">
+        <nav class="nav-bar">
+            <div class="logo"><a href="../index.html"><img src="../assets/img/PRORIPEST-logo.svg" alt="PRORIPEST"/></a></div>
+            <label class="label_hamburguesa" for="menu_hamburguesa">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="list_icon"
+                    viewBox="0 0 16 16">
+                    <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                </svg>
+            </label>
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+            <ul class="ul_links">
+                <li class="li_links"><a href="../index.html" class="link">Inicio</a></li>
+                <li class="li_links"><a href="#" class="link">Modelo</a></li>
+                <li class="li_links"><a href="./pronostico.html" class="link">Pronóstico</a></li>
+                <li class="li_links"><a href="./nosotros.html" class="link">Nosotros</a></li>
+                <li class="li_links"><a href="./modagri.html" class="link">Modagri</a></li>
+                <li class="li_links"><a href="./contacto.html" class="link">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +41,7 @@
         <section class="modelo">
         <h1>Modelo</h1>
         </section>
-        <article>
+        <article class="contenedor">
             <h3>PRORIPEST</h3>
                 <p>En PRORIPEST se identifican cuatro ejes de simulación referidos al uso de fitosanitarios que son 1) Peligro ecotoxicológico, 2) Presencia en el ambiente, 3) Exposición y 4) Riesgo ambiental. Los valores de todas las medidas se expresan en una escala que va de 0 (mínimo valor) a 1 (máximo valor). 
                 Peligro ecotoxicológico [0-1] = Toxicidad intrínseca de los fitosanitarios.
@@ -72,12 +87,12 @@
             </main>
     <footer>
         <div class="logos">
-        <img src="../assets/img/fauba.png" alt=""> 
-        <img src="../assets/img/ifeva2.png" alt=""> 
-        <img src="../assets/img/uba2.png" alt=""> 
-        <img src="../assets/img/conicet2.png" alt="">
-        <img src="../assets/img/surcos-lg-100x80.png" alt="">
-        <img src="../assets/img/smn_horizontal_arg-352x160.png" alt="">
+            <img src="../assets/img/fauba.png" alt="FAUBA. Facultad de Agronomía. UBA"> 
+            <img src="../assets/img/ifeva2.png" alt="IFEVA"> 
+            <img src="../assets/img/uba2.png" alt="UBA. Universidad de Buenos Aires"> 
+            <img src="../assets/img/conicet2.png" alt="CONICET">
+            <img src="../assets/img/surcos-lg-100x80.png" alt="SURCOS">
+            <img src="../assets/img/smn_horizontal_arg-352x160.png" alt="Servicio Meteorlógico Nacional">
         </div>
         <p>© FAUBA | Cátedra de Cerealicultura | Contacto: Diego O. Ferraro ferraro@agro.uba.ar</p>
     </footer>

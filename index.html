@@ -3,36 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Agricultura, Pronóstico de Riesgo Ambiental, Peligro Ecotoxicológico de las Aplicaciones, Evaluación de Riesgo Ambiental">
+    <meta name="keywords" content="FAUBA Agricultura, Pronóstico de Riesgo Ambiental, Peligro Ecotoxicológico de las Aplicaciones, Evaluación de Riesgo Ambiental">
     <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
-    <title>PRORIPEST</title>
+    <title>PRORIPEST Pronóstico del Riesgo Ambiental</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="./assets/img/PRORIPEST-logo.svg" alt="PRORIPEST"></a>
-        </div>
-        <nav>
-        <ul class="navbar">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="./pages/modelo.html">Modelo</a></li>
-            <li><a href="./pages/pronostico.html">Pronóstico</a></li>
-            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
+    <header class="header-nav">
+        <nav class="nav-bar">
+            <div class="logo"><a href="#"><img src="./assets/img/PRORIPEST-logo.svg" alt=""/></a></div>
+            <label class="label_hamburguesa" for="menu_hamburguesa">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="list_icon"
+                    viewBox="0 0 16 16">
+                    <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                </svg>
+            </label>
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+            <ul class="ul_links">
+                <li class="li_links"><a href="#" class="link">Inicio</a></li>
+                <li class="li_links"><a href="./pages/modelo.html" class="link">Modelo</a></li>
+                <li class="li_links"><a href="./pages/pronostico.html" class="link">Pronóstico</a></li>
+                <li class="li_links"><a href="./pages/nosotros.html" class="link">Nosotros</a></li>
+                <li class="li_links"><a href="./pages/modagri.html" class="link">Modagri</a></li>
+                <li class="li_links"><a href="./pages/contacto.html" class="link">Contacto</a></li>
+            </ul>
         </nav>
     </header>
+    <section class="header-top">
+        <div class="header-in">
+        <img class="logo-center" src="./assets/img/PRORIPEST-logo-blanco.svg" alt="PRORIPEST">
+        <h1>es una plataforma para la evaluación ambiental del uso de fitosanitarios
+        </h1>
+    </div>
+    </section>
     <main>
-        <section class="encabezado">
-            <h1>PRORIPEST</h1>
-            <p>es una plataforma para la evaluación ambiental del uso de fitosanitarios
-            </p>
-        </section>
         <section class="pronostico-home">
             <article>
-                <h3>Pronóstico del Riesgo Ambiental
-                </h3>
+                <h2 class="pb20">Pronóstico del Riesgo Ambiental
+                </h2>
                 <p>Es un modelo de simulación que pronostica el riesgo ambiental del uso de fitosanitarios. Incluye el peligro ecotoxicológico e información de clima, suelo, propiedades físico-químicas y ecotoxicológicas de los fitosanitarios y manejo agronómico para definir valores de exposición ambiental y así calcular el riesgo ambiental de fitosanitarios. Simula el riesgo ambiental de la aplicación de diversos fitosanitarios en agua superficial, agua subterránea, suelo y aire.
                     PRORIPEST expresa los valores de riesgo ambiental a través de 4 indicadores específicos: peligro sobre los insectos (I), peligro sobre los mamíferos (M), peligro sobre los peces (F) y peligro global de los fitosanitarios (P).</p>
             </article>
@@ -40,32 +56,42 @@
                 <img src="./assets/img/pronostico-home.jpg" alt="">
             </article>
         </section>
-        <section class="servicios">
-            <article>
-                <h3>Evaluación de Riesgo Ambiental
-                </h3>
-                <p>Incluye el peligro ecotoxicológico e información de clima, suelo, propiedades físico-químicas y ecotoxicológicas de los fitosanitarios y manejo agronómico para definir valores de exposición ambiental y así calcular el riesgo ambiental de fitosanitarios.
-                    Es un modelo de simulación que pronostica el riesgo ambiental del uso de fitosanitarios.
-                    </p>
+        <section class="container-servicios">
+            <article class="card-container article">
+                <div>
+                    <img src="./assets/img/evaluacion.jpg" alt="">
+                </div>
+                <h3>Evaluación de Riesgo Ambiental</h3>
+                <p>Incluye el peligro ecotoxicológico e información de clima, suelo, propiedades físico-químicas y ecotoxicológicas de los fitosanitarios</p>
+                <div class="consulta btn">
+					<input type="button" value="En desarrollo">
+			    </div>
             </article>
-            <article>
-                <h3>Peligro Ecotoxicológico de las Aplicaciones
-                </h3>
-                <p>Es un modelo de simulación que pronostica el riesgo ambiental del uso de fitosanitarios. 
-                    Incluye el peligro ecotoxicológico e información de clima, suelo, propiedades físico-químicas y ecotoxicológicas de los fitosanitarios y manejo agronómico para definir valores de exposición ambiental y así calcular el riesgo ambiental de fitosanitarios.                    
-                    </p>
-            </article>
-            <article>
+            <article class="card-container article">
+                <div>
+                    <img src="./assets/img/tendencias.jpg" alt=""> 
+                </div>
                 <h3>Tendencias de Riesgo Ambiental</h3>
-                <p>Incluye el peligro ecotoxicológico e información de clima, suelo, propiedades físico-químicas y ecotoxicológicas de los fitosanitarios y manejo agronómico para definir valores de exposición ambiental y así calcular el riesgo ambiental de fitosanitarios.
-                    Es un modelo de simulación que pronostica el riesgo ambiental del uso de fitosanitarios.</p>
+                <p> Muestra la dinámica del riesgo ambiental de una serie de fitosanitarios precargados, en escenarios fijos de producción y para todas las localidades cubiertas.</p>
+                <div class="consulta btn">
+					<input type="button" value="En desarrollo">
+			    </div>
+            </article>
+            <article class="card-container article">
+                <div>
+                    <img src="./assets/img/simulador.jpg" alt="">
+                </div>
+                <h3>Simulador de Riesgo Ambiental</h3>
+                <p>PRORIPEST es capaz de simular los cambios en el riesgo ambiental de los fitosanitarios, bajo escenarios definidos por el usuario como clima, manejo y lugar.</p>
+                <div class="consulta btn">
+					<input type="button" value="En desarrollo">
+			    </div>
             </article>
         </section>
         <section class="pronostico-home">
             <article>
-                <h3>Simulador de Riesgo Ambiental
-                </h3>
-                <p>Para rangos predefinidos de las variables que modifican el comportamiento de los fitosanitarios (clima, manejo y sitio), PRORIPEST es capaz de simular los cambios en el riesgo ambiental de los fitosanitarios, bajo escenarios definidos por el usuario.</p>
+                <h2 class="pb20">Peligro Ecotoxicológico de los fitosanitarios</h2>
+                <p>PRORIPEST ofrece este módulo de cálculo para evaluar el peligro de los fitosanitarios. Su valor solo depende del fitosanitario y la dosis aplicada y es una medida de la toxicidad aguda de los fitosanitarios sobre insectos, mamíferos y peces. Su valor puede expresarse por aplicación o por lote.</p>
             </article>
             <article class="imagen-home">
                 <img src="./assets/img/riesgo-ambiental-home.jpg" alt="">
@@ -75,7 +101,6 @@
     <section class="hero" id="hero">
         <h1 class="hero_header">MODAGRI 
         <br>Laboratorio de modelación de sistemas agrícolas </h1>
-        <p class="tagline">ver página con bootstrap</p>
 		<div class="button">
 		<a href="./pages/modagri.html">Conocer más</a>
 	</div>
@@ -85,12 +110,12 @@
     </main>
     <footer>
         <div class="logos">
-            <img src="./assets/img/fauba.png" alt=""> 
-            <img src="./assets/img/ifeva2.png" alt=""> 
-            <img src="./assets/img/uba2.png" alt=""> 
-            <img src="./assets/img/conicet2.png" alt="">
-            <img src="./assets/img/surcos-lg-100x80.png" alt="">
-            <img src="./assets/img/smn_horizontal_arg-352x160.png" alt="">
+            <img src="./assets/img/fauba.png" alt="FAUBA. Facultad de Agronomía. UBA"> 
+            <img src="./assets/img/ifeva2.png" alt="IFEVA"> 
+            <img src="./assets/img/uba2.png" alt="UBA. Universidad de Buenos Aires"> 
+            <img src="./assets/img/conicet2.png" alt="CONICET">
+            <img src="./assets/img/surcos-lg-100x80.png" alt="SURCOS">
+            <img src="./assets/img/smn_horizontal_arg-352x160.png" alt="Servicio Meteorlógico Nacional">
         </div>
         <p>© FAUBA | Cátedra de Cerealicultura | Contacto: Diego O. Ferraro ferraro@agro.uba.ar</p>
     </footer>
